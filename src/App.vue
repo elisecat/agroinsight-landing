@@ -6,7 +6,7 @@
       </div>
     </header>
 
-    <main :class="[$route.path !== '/home' ? 'container mx-auto flex-grow' : 'flex-grow']">
+    <main :class="[$route.path !== '/inicio' ? 'container mx-auto flex-grow' : 'flex-grow']">
       <RouterView />
     </main>
 

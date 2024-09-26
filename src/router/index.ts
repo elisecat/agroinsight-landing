@@ -2,8 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../views/Home.vue';
 
 const routes = [
-  { path: '/', redirect: '/home' },
-  { path: '/inicio', name: 'Home', component: Home },
+  { path: '/', redirect: '/inicio' },
+  { path: '/inicio', name: 'Inicio', component: Home },
 ]
 
 const router = createRouter({
