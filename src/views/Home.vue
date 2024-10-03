@@ -23,20 +23,11 @@
 import { useRouter } from 'vue-router'
 import PageLayout from '@/components/shared/PageLayout.vue'
 import BaseButton from '@/components/shared/BaseButton.vue'
-import { useHeroesStore } from '@/stores/heroesStore'
-import { computed, onMounted } from 'vue'
 
 export default {
     components: { PageLayout, BaseButton },
     setup() {
         const router = useRouter()
-        const heroesStore = useHeroesStore()
-
-        const hasSuperheroes = computed(() => heroesStore.heroes.length > 0)
-
-        onMounted(async () => {
-            await heroesStore.fetchHeroes()
-        })
 
         const navigateToHeroes = () => {
             router.push('/heroes')
@@ -46,15 +37,7 @@ export default {
             router.push('/heroes/create')
         }
 
-        const navigateToPentathlon = () => {
-            if (heroesStore.heroes.length >= 3) {
-                router.push('/pentathlon')
-            } else {
-                alert('You need at least 3 superheroes to participate in the pentathlon!')
-            }
-        }
-
-        return { navigateToHeroes, navigateToCreate, navigateToPentathlon, hasSuperheroes, heroesStore }
+        return { navigateToHeroes, navigateToCreate }
     }
 }
 </script>
