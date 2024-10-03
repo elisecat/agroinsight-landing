@@ -4,7 +4,7 @@
             <div class="relative flex items-center justify-between h-16">
                 <!-- Logo -->
                 <div class="flex-shrink-0">
-                    <img class="h-10 w-auto" src="../../assets/logo.svg" alt="Logo">
+                    <img class="h-10" src="../../assets/logo.svg" alt="Logo">
                 </div>
                 <!-- Links de navegación para pantallas grandes -->
                 <div class="hidden sm:block sm:ml-6">
@@ -18,7 +18,7 @@
                 </div>
 
                 <!-- Botón de menú móvil -->
-                <div class="sm:hidden">
+                <!-- <div class="sm:hidden">
                     <button @click="toggleMenu" type="button"
                         class="text-green-800 hover:text-white hover:bg-green-500 p-2 rounded-md">
                         <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -29,7 +29,7 @@
                                 stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                         </svg>
                     </button>
-                </div>
+                </div> -->
             </div>
         </div>
 

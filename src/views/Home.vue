@@ -11,8 +11,7 @@
             </p>
             <div class="flex justify-center space-x-4 mt-6">
                 <BaseButton variant="green" size="lg">
-                    <a href="https://drive.google.com/uc?export=download&id=16BkoWxdumBDJ4F_oFuoJBnIsdvXoB6qx"
-                        download>Descarga la app ahora</a>
+                    <a href="/AgroInsight.apk" download>Descarga la app ahora</a>
                 </BaseButton>
             </div>
         </div>
