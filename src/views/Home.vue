@@ -9,7 +9,7 @@
                 esta plaga de manera temprana y precisa, ofreciéndole recomendaciones y reportes personalizados para
                 asegurar la salud y productividad de sus cultivos.
             </p>
-            <div class="flex justify-center space-x-4 mt-6">
+            <div class="flex justify-center space-x-4 mt-6 block md:hidden">
                 <BaseButton variant="green" size="lg">
                     <a href="/AgroInsight.apk" download>Descarga la app ahora</a>
                 </BaseButton>
